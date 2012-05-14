@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitterbootstrip</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="btn-group">
+  <button class="btn">Action</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+    <li>Contact</li>
+    <li>Help</li>
+  </ul>
+</div>
+
+</body>
+</html>
